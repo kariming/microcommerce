@@ -1,0 +1,64 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TestsPostman",
+		"_postman_id": "80d32c72-71b1-4a96-ef67-3efb09ee06ef",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"url": "http://localhost:9090/Produits",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits/add",
+			"request": {
+				"url": "http://localhost:9090/Produits/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nom\":\"pog\",\"prix\":199, \"prixAchat\":149,\"id\":null}"
+				},
+				"description": "ajouter un produit"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/AdminProduits",
+			"request": {
+				"url": "http://localhost:9090/AdminProduits",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/AdminProduits/tri",
+			"request": {
+				"url": "http://localhost:9090/AdminProduits/tri",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
